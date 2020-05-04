@@ -1,75 +1,15 @@
-<div id="container_demo" >
- <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
- <a class="hiddenanchor" id="tosubscribe"></a>
- <a class="hiddenanchor" id="tologin"></a>
- <div id="wrapper">
- <div id="login" class="animate form">
- <form  action="mysuperscript.php" autocomplete="on">
- <h1>Log in</h1>
- <p>
- <label for="username" class="uname" data-icon="u" > Your email or username </label>
- <input id="username" name="username" required="required" type="text" placeholder="myusername or <span id="cloak2c8f7e21dd6965e5d01d1f4b89ee6e42">Этот адрес электронной почты защищён от спам-ботов. У вас должен быть включен JavaScript для просмотра.</span><script type='text/javascript'>
-        document.getElementById('cloak2c8f7e21dd6965e5d01d1f4b89ee6e42').innerHTML = '';
-        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
-        var path = 'hr' + 'ef' + '=';
-        var addy2c8f7e21dd6965e5d01d1f4b89ee6e42 = 'mym&#97;&#105;l' + '&#64;';
-        addy2c8f7e21dd6965e5d01d1f4b89ee6e42 = addy2c8f7e21dd6965e5d01d1f4b89ee6e42 + 'm&#97;&#105;l' + '&#46;' + 'c&#111;m';
-        var addy_text2c8f7e21dd6965e5d01d1f4b89ee6e42 = 'mym&#97;&#105;l' + '&#64;' + 'm&#97;&#105;l' + '&#46;' + 'c&#111;m';document.getElementById('cloak2c8f7e21dd6965e5d01d1f4b89ee6e42').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy2c8f7e21dd6965e5d01d1f4b89ee6e42 + '\'>'+addy_text2c8f7e21dd6965e5d01d1f4b89ee6e42+'<\/a>';
-    </script>"/>
- </p>
- <p>
- <label for="password" class="youpasswd" data-icon="p"> Your password </label>
- <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
- </p>
- <p class="keeplogin">
- <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
- <label for="loginkeeping">Keep me logged in</label>
- </p>
- <p class="login button">
- <input type="submit" value="Login" />
- </p>
- <p class="change_link">
- Not a member yet ?
- <a href="#tosubscribe" class="to_subscribe">Join us</a>
- </p>
- </form>
- </div>
- 
- <div id="subscribe" class="animate form">
- <form  action="mysuperscript.php" autocomplete="on">
- <h1> Sign up </h1>
- <p>
- <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
- <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
- </p>
- <p>
- <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
- <input id="emailsignup" name="emailsignup" required="required" type="text" placeholder="<span id="cloakc62dc21ba20606bba42cf5527e4a2df8">Этот адрес электронной почты защищён от спам-ботов. У вас должен быть включен JavaScript для просмотра.</span><script type='text/javascript'>
-        document.getElementById('cloakc62dc21ba20606bba42cf5527e4a2df8').innerHTML = '';
-        var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
-        var path = 'hr' + 'ef' + '=';
-        var addyc62dc21ba20606bba42cf5527e4a2df8 = 'mys&#117;p&#101;rm&#97;&#105;l' + '&#64;';
-        addyc62dc21ba20606bba42cf5527e4a2df8 = addyc62dc21ba20606bba42cf5527e4a2df8 + 'm&#97;&#105;l' + '&#46;' + 'c&#111;m';
-        var addy_textc62dc21ba20606bba42cf5527e4a2df8 = 'mys&#117;p&#101;rm&#97;&#105;l' + '&#64;' + 'm&#97;&#105;l' + '&#46;' + 'c&#111;m';document.getElementById('cloakc62dc21ba20606bba42cf5527e4a2df8').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyc62dc21ba20606bba42cf5527e4a2df8 + '\'>'+addy_textc62dc21ba20606bba42cf5527e4a2df8+'<\/a>';
-    </script>"/>
- </p>
- <p>
- <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
- <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
- </p>
- <p>
- <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
- <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
- </p>
- <p class="signin button">
- <input type="submit" value="Sign up"/>
- </p>
- <p class="change_link">
- Already a member ?
- <a href="#tologin" class="to_subscribe"> Go and log in </a>
- </p>
- </form>
- </div>
- 
- </div>
-</div> 
+<form method="post" action="/login/">
+    <table>
+        <tr>
+            <td><label for="loginField">Логин</label></td>
+            <td><input id="loginField" type="text" name="login"></td>
+        </tr>
+        <tr>
+            <td><label for="passwordField">Пароль</label></td>
+            <td><input id="passwordField" type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center"><input type="submit" value="Войти"></td>
+        </tr>
+    </table>
+</form>
